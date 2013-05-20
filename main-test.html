@@ -1,8 +1,113 @@
-here is new file
+<!--
+Tuesday May 14, NEW NEW NEW
 
-wefwefwf
+First - check this out!  Jess added *LOGIC*  (IF/THEN) to this page. Basically this is a kind of "form validation"
 
-testing 1 2 3
+That is really impressive!
+
+Chris came in a little late to the game... but yeah he is totally caught up to speed, and he did it quickly. He WON the coding contest yesterday!
+
+James has been the creative surge with all kinds of great ideas... check out his latest idea: push a button and a RANDOM color appears...
+
+there are many ways of doing this... let's start with a pre-defined list of colors, and a basic random number generator to pick from that list.
+
+Look in the keysToTheBuisnac function below...  I put a random number into a variable.  
+
+Instead of a name, if you type the exact phrase GIVE ME A RANDOM into the text input box, an alert showing a random number will appear. Can you see what is happening?
+-->
+ 
+<html>
+<head>
+ 
+        <script type="text/javascript">
+ 
+               
+        var $user_name = ('Please Enter Your username');
+
+            function keysToTheBuisnac()
+            {               
+
+                //HERE IT IS!!!!!
+                if (document.getElementById("username").value == 'give me a random')
+                {
+                    $myRandomNumber = Math.floor((Math.random()*100)+1);
+                    alert($myRandomNumber);
+
+                } else if (document.getElementById("username").value == 'Enter Your Username') 
+                {
+                    alert('ENTER A USER NAME');
+                } 
+                else if (document.getElementById("username").value == '') 
+                {
+                    alert('ENTER A USER NAME');
+                } 
+                else if (document.getElementById("username").value == 'Jess') 
+                {
+                    alert('HELLO MASTER! (admin)');
+                } 
+                else
+                {
+                alert('Hello ' + $user_name + '!');
+                };
+            }
 
 
-newer still
+                //DO WHAT I WANT!! DO IT NOW
+                function overkill()
+                {
+                document.getElementById("jess").innerHTML = 'HELLO I AM JESS!!!!!!!!!!!!!!!';
+                }
+ 
+                var $j = 'hello';
+                function popcorn()
+                {
+                alert($j);
+                }
+ 
+ 
+                function adios()
+                {
+               
+                document.getElementById("zebra").style.color="red";
+ 
+                //by putting these slashes in, I have commented out this code, so it will
+                //not have any effect:
+                //document.getElementById('zebra').innerHTML = 'Goodbye';
+                }
+ 
+                function oldYeller()
+                {
+               
+                document.getElementById("zebra").style.color="yellow";
+                }
+ 
+                function sunShine(){
+ 
+                document.getElementById("zebra").innerHTML = '<img src="http://doubtfulnews.com/wp-content/uploads/2013/01/sunshine.png">';
+                }
+ 
+ 
+                </script>
+</head>
+ 
+        <body>
+                <input type="button" value="JessButton" onclick="overkill();">
+ 
+                <input type="button" value="Hello" onclick="popcorn();">
+ 
+                <input type="button" value="Make Red" onclick="adios();">
+ 
+                <input type="button" value="Yellooooww" onclick="oldYeller();">
+ 
+                <input type="button" value="Sunshine" onclick="sunShine();">
+ 
+                <input type="field" value="Enter Your Username" id="username";>
+ 
+                <input type="button" value="ChrisIsNotChrist" onclick="keysToTheBuisnac();">
+ 
+<!--  CHECK IT OUT: In the line below, James changed my original colors of red text on a black background to cyan text on a limegreen background.  -->
+<div  id="zebra" style="color:cyan;background-color:limegreen;font-size:200px;">Objective C Club</div>
+ 
+        </body>
+ 
+</html>
