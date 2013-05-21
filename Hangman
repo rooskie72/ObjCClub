@@ -10,8 +10,8 @@ alert("head");
 }
 function zebra(){alert("head and arms");}
 function safe(){alert("safe");}
-function lion(){alert(head, arms, and back, only one more miss)}
-function griaff(){alert(you lose please go to begining)}
+function lion(){alert(head, arms, and back, only one more miss);}
+function griaff(){alert(you lose please go to begining);}
 </script>
 </head>
 
